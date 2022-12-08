@@ -1,0 +1,15 @@
+{
+    "python.linting.pylintArgs": [
+        "--disable=C0103"
+    ],
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length=80"
+    ],
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "editor.bracketPairColorization.enabled": true
+    // "python.condaPath": "/opt/conda/bin/python"
+}

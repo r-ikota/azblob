@@ -25,7 +25,7 @@ $ pip install azure-storage-blob
 
 ## Default values
 
-Default values are assumed to be stored in the environmental variables:
+Default values are assumed to be stored in the environment variables:
 - AZ_STORAGE_ACCOUNT_NAME
 - AZ_STORAGE_ACCOUNT_KEY
 - AZ_BLOB_CONTAINER_NAME

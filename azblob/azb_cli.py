@@ -23,12 +23,12 @@ def get_var_from_args(args, item):
     ret = getattr(args, azv)
 
     # if an argument for the item is not given in command line arguments,
-    # retrieve a value from an environmental variable
+    # retrieve a value from an environment variable
     if not ret:
         try:
             ret = os.environ[aze]
         except KeyError as e:
-            print(f"The environmental variable {e.args[0]} is not defined!")
+            print(f"The environment variable {e.args[0]} is not defined!")
             raise
     return ret
 

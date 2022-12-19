@@ -25,17 +25,18 @@ $ pip install azure-storage-blob
 
 ## Default values
 
-Default values are assumed to be stored in the environment variables:
-- AZ_STORAGE_ACCOUNT_NAME
-- AZ_STORAGE_ACCOUNT_KEY
-- AZ_BLOB_CONTAINER_NAME
-- AZ_SAS_TOKEN
-
+Default values are assumed to be stored in the following environment variables:
+- AZURE_STORAGE_ACCOUNT
+- AZURE_STORAGE_KEY
+- AZURE_BLOB_CONTAINER
+- AZURE_STORAGE_SAS_TOKEN
 
 ## Example
 
 ```bash
-$ export AZ_SAS_TOKEN=`azb get_sas`
+$ export AZURE_STORAGE_SAS_TOKEN=`azb get_sas`
+$ azb list_blobs
+$ azb upload_blob <blob_name> <file_name>
 ```    
 
 
@@ -48,3 +49,4 @@ $ export AZ_SAS_TOKEN=`azb get_sas`
 - [ResourceTypes Class](https://learn.microsoft.com/en-us/python/api/azure-storage-blob/azure.storage.blob.resourcetypes?view=azure-python)
 - [AccountSasPermissions Class](https://learn.microsoft.com/en-us/python/api/azure-storage-blob/azure.storage.blob.accountsaspermissions?view=azure-python)
 - [ContainerClient Class](https://learn.microsoft.com/en-us/python/api/azure-storage-blob/azure.storage.blob.containerclient?view=azure-python)
+- [Choose how to authorize access to blob data with Azure CLI](https://learn.microsoft.com/en-us/azure/storage/blobs/authorize-data-operations-cli)

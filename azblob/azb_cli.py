@@ -6,15 +6,12 @@ import os
 import argparse
 from . import azb
 
-# storage_account_name = os.environ["AZ_STORAGE_ACCOUNT_NAME"]
-# storage_account_key = os.environ["AZ_STORAGE_ACCOUNT_KEY"]
-
 
 AZ_VAR_ENV = dict(
-    SA_NAME=["storage_account_name", "AZ_STORAGE_ACCOUNT_NAME"],
-    SA_KEY=["storage_account_key", "AZ_STORAGE_ACCOUNT_KEY"],
-    BC_NAME=["blob_container_name", "AZ_BLOB_CONTAINER_NAME"],
-    SAS=["sas_token", "AZ_SAS_TOKEN"],
+    SA_NAME=["storage_account_name", "AZURE_STORAGE_ACCOUNT"],
+    SA_KEY=["storage_account_key", "AZURE_STORAGE_KEY"],
+    BC_NAME=["blob_container_name", "AZURE_BLOB_CONTAINER"],
+    SAS=["sas_token", "AZURE_STORAGE_SAS_TOKEN"],
 )
 
 

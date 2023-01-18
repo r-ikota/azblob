@@ -1,4 +1,4 @@
-# azblob -- operating Azure Blob storage
+# azblob -- a simple tool for Azure Blob storage
 
 ## Requirements
 
